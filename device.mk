@@ -67,6 +67,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# UDFPS
+$(call soong_config_set,qtidisplay_udfps,true)
+
 # Vibrator
 $(call soong_config_set,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
 
